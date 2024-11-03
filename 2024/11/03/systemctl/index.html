@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>部落格</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="部落格">
+  <title>systemctl | 部落格</title>
+  <meta name="keywords" content=" linux ">
+  <meta name="description" content="systemctl | 部落格">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -52,7 +52,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -422,12 +422,73 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-systemctl" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%8F%B6%E8%90%BD%E9%98%81"><span class="toc-text">关于叶落阁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">systemctl</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="linux">linux</a> > 
+            
+            <a  data-rel="linux&lt;---&gt;常见命令解释">常见命令解释</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">linux</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2024-11-03 18:13:41'>2024-11-03 18:06</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:762</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#What"><span class="toc-text">What</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Why"><span class="toc-text">Why</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#How"><span class="toc-text">How</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -440,33 +501,77 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于叶落阁"><a href="#关于叶落阁" class="headerlink" title="关于叶落阁"></a>关于叶落阁</h2><p><strong>叶落阁</strong> 是阁主（杨玉杰）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，部署在 <a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>主题 <a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p><code>3-hexo</code> 主题使用交流可以加 Q群: <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e8cf083cc097141eaf323396f1766809b8e90ff00c67bb441898f672892f6904"><img data-ignore border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="3-hexo使用交流" title="3-hexo使用交流"></a></p>
-<p>主要功能：</p>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="What"><a href="#What" class="headerlink" title="What"></a>What</h1><p>systemctl 如果硬要拆分解释，可以这么理解</p>
 <ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad&#x2F;手机等移动端适配</li>
-<li>页面全局快捷键 <a target="_blank" rel="noopener" href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
+<li><p>system 表示它用于系统级别的管理。</p>
+</li>
+<li><p>ctl 是 “control”的缩写，表示控制的意思。</p>
+</li>
 </ul>
+<p>是 systemd 的命令行接口工具，用于控制 systemd 系统和服务管理器。在这里，“systemd” 是一个系统守护进程的名称，负责在Linux系统中初始化用户空间并管理系统进程。systemctl 命令用于与这个守护进程交互，执行如启动服务、停止服务、获取服务状态等操作。</p>
+<h1 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h1><p>需要结合 <code>systemd</code> 来理解， <code>systemd</code> 是系统和服务管理器， systemctl 是用来管理这些服务的工具，为 <code>systemd</code> 提供支持。 处于以下原因， linxu 引入了 sysmted 和 systemctl</p>
+<ol>
+<li><strong>并发启动服务</strong>：systemd 通过使用 systemctl 能够并发启动服务，这可以大大加快系统启动时间。</li>
+<li><strong>依赖性管理</strong>：systemd 提供了对服务之间依赖关系更好的管理。systemctl 使管理这些依赖变得简单，允许系统只启动在特定时间真正需要的服务。</li>
+<li><strong>按需启动服务</strong>：systemd 可以按需启动服务，这意味着仅当请求服务时，服务才会被启动。这通过使用 socket 激活等技术实现，而 systemctl 提供了管理这一行为的接口。</li>
+<li><strong>日志管理</strong>：systemd 引入了 journald，一个新的日志系统，systemctl 可以用来管理和查询 systemd 的日志信息，提供了对系统日志的更好访问。</li>
+<li><strong>服务管理</strong>：与旧的初始化系统相比，systemd 使用 unit files 替代脚本来启动和管理服务，systemctl 提供了一个简单的方式来启动、停止、重启、显示状态和管理这些 unit files。</li>
+<li><strong>配置管理</strong>：systemd 允许通过 systemctl 重新加载其配置，不仅仅是单个服务的配置，而且是整个系统的配置，而不需要重启。</li>
+<li><strong>一致的接口</strong>：systemctl 提供了一个一致的命令行接口来控制不只是系统服务，还有定时器、设备、挂载点等。这种一致性简化了系统管理。</li>
+</ol>
+<h1 id="How"><a href="#How" class="headerlink" title="How"></a>How</h1><ol>
+<li><strong>启动服务</strong>：启动（激活）一个服务。</li>
+</ol>
+<pre><code>systemctl start 服务名.service
+</code></pre>
+<ol start="2">
+<li><strong>停止服务</strong>：停止（去激活）一个正在运行的服务。</li>
+</ol>
+<pre><code>systemctl stop 服务名.service
+</code></pre>
+<ol start="3">
+<li><strong>重启服务</strong>：重启一个服务。如果服务正在运行，这将会停止后再启动它；如果服务未运行，则会启动服务。</li>
+</ol>
+<pre><code>systemctl restart 服务名.service
+</code></pre>
+<ol start="4">
+<li><strong>查看服务状态</strong>：检查一个服务的运行状态。</li>
+</ol>
+<pre><code>systemctl status 服务名.service
+</code></pre>
+<ol start="5">
+<li><strong>启用服务</strong>：启用一个服务，使之在系统启动时自动启动。</li>
+</ol>
+<pre><code>systemctl enable 服务名.service
+</code></pre>
+<ol start="6">
+<li><strong>禁用服务</strong>：禁用一个服务，使之在系统启动时不自动启动。</li>
+</ol>
+<pre><code>systemctl disable 服务名.service
+</code></pre>
+<ol start="7">
+<li><strong>重新加载服务配置</strong>：无需停止服务就能重新加载配置文件。</li>
+</ol>
+<pre><code>systemctl reload 服务名.service
+</code></pre>
+<ol start="8">
+<li><strong>查看所有服务状态</strong>：列出并查看所有服务的当前状态。</li>
+</ol>
+<pre><code>systemctl list-units --type=service
+</code></pre>
 
-        </article>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论， </span>
+    </div>
+</article>
+
+
+
+
+
     <div id="comments">
     <script>
         {
@@ -492,6 +597,13 @@
     </script>
 </div>
 
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -500,11 +612,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a></p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 </body>
