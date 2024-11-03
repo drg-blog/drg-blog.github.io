@@ -6,14 +6,17 @@
   <meta name="keywords" content="">
   <meta name="description" content="about | 部落格">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="https://drg-blog.github.io/about/index.html">
+<meta name="description" content="Whatsystemctl 如果硬要拆分解释，可以这么理解  system 表示它用于系统级别的管理。  ctl 是 “control”的缩写，表示控制的意思。   是 systemd 的命令行接口工具，用于控制 systemd 系统和服务管理器。在这里，“systemd” 是一个系统守护进程的名称，负责在Linux系统中初始化用户空间并管理系统进程。systemctl 命令用于与这个守护进程交互">
+<meta property="og:type" content="article">
+<meta property="og:title" content="systemctl">
+<meta property="og:url" content="https://drg-blog.github.io/2024/11/03/systemctl/index.html">
 <meta property="og:site_name" content="部落格">
+<meta property="og:description" content="Whatsystemctl 如果硬要拆分解释，可以这么理解  system 表示它用于系统级别的管理。  ctl 是 “control”的缩写，表示控制的意思。   是 systemd 的命令行接口工具，用于控制 systemd 系统和服务管理器。在这里，“systemd” 是一个系统守护进程的名称，负责在Linux系统中初始化用户空间并管理系统进程。systemctl 命令用于与这个守护进程交互">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-10-27T11:40:34.000Z">
-<meta property="article:modified_time" content="2024-10-27T11:40:34.827Z">
+<meta property="article:published_time" content="2024-11-03T10:06:09.000Z">
+<meta property="article:modified_time" content="2024-11-03T10:29:02.164Z">
 <meta property="article:author" content="龙叔">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
 
 
@@ -451,33 +454,23 @@
 
     <div id="comments"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://gist.github.com/drg-blog/02758cf38944092d4171ba4aaf5b9d20.js"></script>
 
 <script type="text/javascript">
-	async function hashStringToFixedLength(input) {
-    	const encoder = new TextEncoder();
-    	const data = encoder.encode(input);
-    	const hashBuffer = await window.crypto.subtle.digest('SHA-256', data);
-    	const hashArray = Array.from(new Uint8Array(hashBuffer));
-    	const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-    	return hashHex.substring(0, 10);
-	}
-	hashStringToFixedLength(location.pathname).then( h_id => {
-		console.log('id:', h_id)
-    	$.getScript('/js/gitalk.js', function () {
-    	    var gitalk = new Gitalk({
-    	        clientID: 'Ov23liKKBCGbHwuN5dbQ',
-    	        clientSecret: 'a05bef604e005c74724b25cc0204e5617a731839',
-    	        repo: 'drg-blog.github.io',
-    	        owner: 'drg-blog',
-    	        admin: ['drg-blog'],
-    	        id: h_id,
-    	        distractionFreeMode: 'true',
-    	        language: 'zh-CN',
-    	        perPage: parseInt('10',10)
-    	    })
-    	    gitalk.render('comments')
-    	})
-	})
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: 'Ov23liKKBCGbHwuN5dbQ',
+            clientSecret: 'a05bef604e005c74724b25cc0204e5617a731839',
+            repo: 'drg-blog.github.io',
+            owner: 'drg-blog',
+            admin: ['drg-blog'],
+			id: md5(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
 </script>
 
 
