@@ -532,6 +532,7 @@
 <script src="https://gist.githubusercontent.com/drg-blog/02758cf38944092d4171ba4aaf5b9d20/raw/ee6d9fbc93ae8dc16dfba020f6a4ddc82db725dd/md5.min.js"></script>
 
 <script type="text/javascript">
+	console.log('id: ', md5(location.pathname))
     $.getScript('/js/gitalk.js', function () {
         var gitalk = new Gitalk({
             clientID: 'Ov23liKKBCGbHwuN5dbQ',
