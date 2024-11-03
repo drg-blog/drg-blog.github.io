@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>linux 技巧</title>
+      <link href="/2024/11/03/linux-%E6%8A%80%E5%B7%A7/"/>
+      <url>/2024/11/03/linux-%E6%8A%80%E5%B7%A7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="grep-rl-‘关键字’"><a href="#grep-rl-‘关键字’" class="headerlink" title="grep -rl ‘关键字’"></a>grep -rl ‘关键字’</h1><blockquote><p>递归查找当前目录下内容包含关键字的文件，并且最终输出文件名</p></blockquote><p>-r: 递归查找</p><p>-l: 仅输出文件名</p><blockquote><p>Tips: 如果不想递归查找， 可执行 grep -l ‘xx’ *</p><p>如果要找隐藏文件，执行 grep -l ‘xx’ .**</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux 常用命令 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 奇技淫巧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2024/10/27/hello-world/"/>
       <url>/2024/10/27/hello-world/</url>
