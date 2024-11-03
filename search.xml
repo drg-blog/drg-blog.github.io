@@ -13,7 +13,9 @@
       
       <categories>
           
-          <category> markdown 技巧 </category>
+          <category> markdown </category>
+          
+          <category> 技巧 </category>
           
       </categories>
       
@@ -38,7 +40,9 @@
       
       <categories>
           
-          <category> linux 常用命令 </category>
+          <category> linux </category>
+          
+          <category> 常用命令 </category>
           
       </categories>
       
